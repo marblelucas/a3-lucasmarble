@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "scripts": {
-    "start": "node --omit=dev server.better.js"
+    "start": "node server.better.js"
   },
   "dependencies": {
     "cookie-session": "^2.1.1",
