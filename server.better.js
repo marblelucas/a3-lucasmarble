@@ -20,7 +20,7 @@ const appdata = []
 require('dotenv').config()
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = `mongodb+srv://${{USERNM}}:${{PASS}}@${{HOST}}/?retryWrites=true&w=majority&appName=Hurricanes`;
+const uri = `mongodb+srv://${process.env.USERNM}:${process.env.PASS}@${process.env.HOST}/?retryWrites=true&w=majority&appName=Hurricanes`;
 
 app.use( cookie({
   name: 'session',
